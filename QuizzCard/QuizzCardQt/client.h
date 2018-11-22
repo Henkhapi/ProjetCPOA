@@ -1,10 +1,19 @@
-#ifndef CLIENT_H
-#define CLIENT_H
+#ifndef CLIENT
+#define CLIENT
 
-class Client
-{
+#include <iostream>
+#include <iomanip>
+#include <sstream>
+#include "paquet.h"
+
+class Client {
+private:
+    Paquet **paquet;
+    std::ostream login;
 public:
-    Client();
+    bool authentifier( std::ostream &login);
+    void addPaquet( std::ostream &paquet) const;
+    void addCarte( std::ostream &nomPaquet, std::ostream front, std::ostream back) const;
 };
 
-#endif // CLIENT_H
+#endif
