@@ -4,7 +4,7 @@
 #include <iostream>
 #include <iomanip>
 #include <sstream>
-#include "Client.hpp"
+#include "client.h"
 
 class GestionnaireDialogue {
 private:

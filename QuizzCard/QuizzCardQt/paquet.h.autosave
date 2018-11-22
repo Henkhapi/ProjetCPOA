@@ -1,0 +1,24 @@
+#ifndef PAQUET
+#define PAQUET
+
+#include <iostream>
+#include <iomanip>
+#include <sstream>
+#include <string>
+#include <vector>
+#include "carte.h"
+
+class Paquet {
+private:
+  std::string nom;  
+public:
+  Paquet(std::ostringstream nomPaquet){
+    nom(nomPaquet);
+    std::vector<Carte> cartes;
+  }
+  void addCarte(std::ostringstream front, std::ostringstream back) const{
+    cartes.push_back(new Carte(front, back));
+}
+};
+
+#endif
