@@ -8,7 +8,7 @@
 
 class Client {
 private:
-    Paquet **paquet;
+    std::vector<Paquet*> paquets;
     std::ostream login;
 public:
     bool authentifier( std::ostream &login);

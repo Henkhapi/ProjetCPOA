@@ -11,7 +11,7 @@
 class Paquet {
 private:
   std::string nom;
-  std::vector<Carte> cartes;
+  std::vector<Carte*> cartes;
 public:
   Paquet(std::string nomPaquet){
     nom(nomPaquet);

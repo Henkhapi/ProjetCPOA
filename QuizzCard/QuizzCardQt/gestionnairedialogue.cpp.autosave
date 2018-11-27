@@ -5,6 +5,3 @@ GestionnaireDialogue::GestionnaireDialogue()
 
 }
 
-bool GestionnaireDialogue::isText(){
-
-}

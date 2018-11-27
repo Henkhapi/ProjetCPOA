@@ -20,9 +20,9 @@ protected:
   std::string text;
 public:
   FaceImage(std::string txt) : Face(), content(QString::fromStdString(txt)),text(txt){}
-  virtual ~FaceImage(){}
-  void setContent(std::string txt) const {}
-  std::string getContent()const {return text;}
+  virtual ~FaceImage();
+  void setContent(std::string txt) const ;
+  std::string getContent()const ;
 };
 
 class FaceTexte : public Face{
@@ -31,9 +31,9 @@ private:
 
 public:
   FaceTexte(std::string txt) : Face(), content(txt) {}
-  virtual ~FaceTexte(){}
-  void setContent(std::string txt)const {}
-  std::string getContent()const {return content;}
+  virtual ~FaceTexte();
+  void setContent(std::string txt)const ;
+  std::string getContent()const ;
 
 };
 
