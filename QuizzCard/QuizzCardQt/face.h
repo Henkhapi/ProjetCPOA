@@ -16,9 +16,9 @@ class FaceImage : public Face{
 protected:
   QImage content;
 public:
-  FaceImage(QImage img) : Face(), content(img){}
+  FaceImage(std::str content) : Face(), content(content){}
   virtual ~FaceImage(){}
-  void setContent(QImage img) const {}
+  void setContent(std::str content) const {}
 };
 
 class FaceTexte : public Face{
@@ -26,9 +26,9 @@ private:
   std::string content;
 
 public:
-  FaceTexte(std::string txt) : Face(), content(txt) {}
+  FaceTexte(std::string content) : Face(), content(content) {}
   virtual ~FaceTexte(){}
-  void setContent(std::string txt){}
+  void setContent(std::string content){}
 
 };
 
