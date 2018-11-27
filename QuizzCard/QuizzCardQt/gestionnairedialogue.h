@@ -8,15 +8,14 @@
 
 class GestionnaireDialogue {
 private:
-  Client **client;
+  Client *client;
   std::ostream currentLogin;
-  bool isText( std::ostream &os);
-  bool verifClient( std::ostream login);
+  bool verifClient( std::string login);
 public:
-  bool authentifier( std::ostream &login);
+  bool authentifier( std::string login);
   void deconnecter() const;
-  void addPaquet( std::ostream &os) const;
-  void addCarte( std::ostream &nomPaquet, std::ostream front, std::ostream back) const;
+  void addPaquet( std::string s) const;
+  void addCarte( std::string nomPaquet, std::string front, std::string back) const;
   void demandeInfoPaquet() const;
   void demandeInfoCarte() const;
 };

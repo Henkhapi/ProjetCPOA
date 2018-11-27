@@ -2,4 +2,6 @@
 
 GestionnaireDialogue::GestionnaireDialogue()
 {
+
 }
+GestionnaireDialogue
