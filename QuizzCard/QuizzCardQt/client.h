@@ -5,15 +5,18 @@
 #include <iomanip>
 #include <sstream>
 #include "paquet.h"
+#include <vector>
 
 class Client {
-private:
+protected:
     std::vector<Paquet*> paquets;
-    std::ostream login;
+    std::string loginClient;
 public:
-    bool authentifier( std::ostream &login);
-    void addPaquet( std::ostream &paquet) const;
-    void addCarte( std::ostream &nomPaquet, std::ostream front, std::ostream back) const;
+    Client(std::string login) :loginClient(login){}
+    void authentifier (std::string login);
+    void addPaquet( std::string paquet) ;
+    void addCarte( std::string nomPaquet, std::string front, std::string back);
+    std::string getLogin() const;
 };
 
 #endif

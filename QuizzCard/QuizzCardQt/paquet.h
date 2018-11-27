@@ -13,13 +13,9 @@ private:
   std::string nom;
   std::vector<Carte*> cartes;
 public:
-  Paquet(std::string nomPaquet){
-    nom(nomPaquet);
-    cartes = std::vector<Carte>;
-  }
-  void addCarte(std::string front, std::string back) const{
-    cartes.push_back(new Carte(front, back));
-}
+  Paquet(std::string nomPaquet) : nom(nomPaquet){}
+  void addCarte(std::string front, std::string back);
+  std::string getNom() const;
 };
 
 #endif
