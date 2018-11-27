@@ -8,23 +8,14 @@
 
 class Carte {
 private:
-  Face faceFront;
-  Face faceBack;
+  Face *faceFront;
+  Face *faceBack;
 public:
-  Carte(std::string front, std::string back){
-    faceFront.setContent(front);
-    faceBack.setContent(back);
-  }
-  void setFaces(std::string front, std::string back) const{
-    faceFront.setContent(front);
-    faceBack.setContent(back);
-}
-  std::string getFaceFront() const{
-    return faceFront.getContent();
-  }
-  std::string getFaceBack() const{
-    return faceBack.getContent();
-  }
+  Carte(std::string front, std::string back);
+  void setFaces(std::string front, std::string back) const;
+  std::string getFaceFront() const;
+  std::string getFaceBack() const;
+  bool isText( std::string os);
 };
 
 #endif

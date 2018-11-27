@@ -4,7 +4,4 @@ GestionnaireDialogue::GestionnaireDialogue()
 {
 
 }
-
-bool GestionnaireDialogue::isText(){
-
-}
+GestionnaireDialogue
