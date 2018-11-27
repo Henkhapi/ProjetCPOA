@@ -12,7 +12,7 @@ std::string FaceImage::getContent()const{
     return content;
 }
 
-void FaceText::setContent(std::string content) const{
+void FaceTexte::setContent(std::string content) const{
     content=content;
 }
 
