@@ -1,8 +1,6 @@
 #include "face.h"
 
-Face::Face()
-{
-}
+
 
 void FaceImage::setContent(std::string content) const{
     content=content;
@@ -16,6 +14,6 @@ void FaceTexte::setContent(std::string content) const{
     content=content;
 }
 
-std::string FaceText::getContent()const{
+std::string FaceTexte::getContent()const{
     return content;
 }

@@ -12,9 +12,9 @@ private:
   Face *faceBack;
 public:
   Carte(std::string front, std::string back);
-  void setFaces(std::string front, std::string back) const;
-  std::string getFaceFront() const;
-  std::string getFaceBack() const;
+  void setFaces(std::string front, std::string back);
+  Face *getFaceFront() const;
+  Face *getFaceBack() const;
   bool isText( std::string os);
 };
 
