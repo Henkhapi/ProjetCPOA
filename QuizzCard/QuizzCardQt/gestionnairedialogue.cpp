@@ -1,31 +1,33 @@
 #include "gestionnairedialogue.h"
 
 void GestionnaireDialogue::authentifier(std::string login){
-    if(!verifClient(login)){
-        clients.push_back(new Client(login));
+    currentClient = verifClient(login);
+    if(currentClient == NULL){
+        currentClient = new Client(login);
+        clients.push_back(currentClient);
     }
     currentLogin = login;
 }
 
 void GestionnaireDialogue::deconnecter(){
     currentLogin = "";
+    currentClient = NULL;
 }
 
 void GestionnaireDialogue::addPaquet(std::string s) const{
-    client->addPaquet(s);
+    currentClient->addPaquet(s);
 }
 
 void GestionnaireDialogue::addCarte(std::string nomPaquet, std::string front, std::string back) const{
-    client->addCarte(nomPaquet,front,back);
+    currentClient->addCarte(nomPaquet,front,back);
 }
-bool GestionnaireDialogue::verifClient(std::string login){
-    bool res = false;
-    int i;
+Client *GestionnaireDialogue::verifClient(std::string login){
+    unsigned int i;
     for(i=0;i<clients.size();i++){
-        if(clients[i].getLogin()==login){
-            res = true;
+        if(clients[i]->getLogin()==login){
+            return clients[i];
         }
     }
-    return res;
+    return NULL;
 
 }
