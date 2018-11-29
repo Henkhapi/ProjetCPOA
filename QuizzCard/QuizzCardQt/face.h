@@ -21,7 +21,7 @@ protected:
 public:
   FaceImage(std::string content) : Face(), content(content){}
   virtual ~FaceImage(){}
-  void setContent(std::string content) const;
+  void setContent(std::string content);
   std::string getContent()const ;
 };
 
@@ -32,7 +32,7 @@ private:
 public:
   FaceTexte(std::string content) : Face(), content(content) {}
   virtual ~FaceTexte(){}
-  void setContent(std::string content) const;
+  void setContent(std::string content);
   std::string getContent()const ;
 };
 

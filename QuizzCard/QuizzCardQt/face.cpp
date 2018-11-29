@@ -1,21 +1,17 @@
 #include "face.h"
 
-Face::Face()
-{
-}
-
-void FaceImage::setContent(std::string content) const{
-    content=content;
+void FaceImage::setContent(std::string text){
+    content=text;
 }
 
 std::string FaceImage::getContent()const{
     return content;
 }
 
-void FaceTexte::setContent(std::string content) const{
-    content=content;
+void FaceTexte::setContent(std::string text){
+    content=text;
 }
 
-std::string FaceText::getContent()const{
+std::string FaceTexte::getContent()const{
     return content;
 }
