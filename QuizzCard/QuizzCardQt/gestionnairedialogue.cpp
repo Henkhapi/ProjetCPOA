@@ -2,9 +2,9 @@
 
 void GestionnaireDialogue::authentifier(std::string login){
     if(!verifClient(login)){
-        client = new Client(login);
+        clients.push_back(new Client(login));
     }
-    currentLogin = client->getLogin();
+    currentLogin = login;
 }
 
 void GestionnaireDialogue::deconnecter(){
@@ -17,4 +17,15 @@ void GestionnaireDialogue::addPaquet(std::string s) const{
 
 void GestionnaireDialogue::addCarte(std::string nomPaquet, std::string front, std::string back) const{
     client->addCarte(nomPaquet,front,back);
+}
+bool GestionnaireDialogue::verifClient(std::string login){
+    bool res = false;
+    int i;
+    for(i=0;i<clients.size();i++){
+        if(clients[i].getLogin()==login){
+            res = true;
+        }
+    }
+    return res;
+
 }

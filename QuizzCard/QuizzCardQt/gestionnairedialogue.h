@@ -8,7 +8,7 @@
 
 class GestionnaireDialogue {
 private:
-  Client *client;
+  std::vector<Client*> clients;
   std::string currentLogin;
   bool verifClient( std::string login);
 public:
