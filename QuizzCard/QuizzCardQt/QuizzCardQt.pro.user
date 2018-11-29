@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
+<<<<<<< HEAD
 <!-- Written by QtCreator 3.0.1, 2018-11-29T10:08:25. -->
+=======
+<<<<<<< HEAD
+<!-- Written by QtCreator 3.0.1, 2018-11-29T10:05:14. -->
+=======
+<!-- Written by QtCreator 3.0.1, 2018-11-29T10:04:45. -->
+>>>>>>> 21e09cef86bd20ff799878c3a9668e4ae119948c
+>>>>>>> 089758f026dfdf51a456b595343b6e6e8483a44e
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -53,12 +61,20 @@
   <valuemap type="QVariantMap">
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop</value>
+<<<<<<< HEAD
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{f9af6e37-5d71-4a43-8461-fffe9f344e8d}</value>
+=======
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{59523f95-ac36-41b9-956c-2e32a69d231e}</value>
+>>>>>>> 089758f026dfdf51a456b595343b6e6e8483a44e
    <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
+<<<<<<< HEAD
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/profil/spindler9u/QuizzCard/ProjetCPOA/QuizzCard/build-QuizzCardQt-Desktop-Debug</value>
+=======
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/profil/henry262u/ProjetCPOA/QuizzCard/build-QuizzCardQt-Desktop-Debug</value>
+>>>>>>> 089758f026dfdf51a456b595343b6e6e8483a44e
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -117,7 +133,11 @@
     <value type="bool" key="Qt4ProjectManager.Qt4BuildConfiguration.UseShadowBuild">true</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
+<<<<<<< HEAD
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/profil/spindler9u/QuizzCard/ProjetCPOA/QuizzCard/build-QuizzCardQt-Desktop-Release</value>
+=======
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/profil/henry262u/ProjetCPOA/QuizzCard/build-QuizzCardQt-Desktop-Release</value>
+>>>>>>> 089758f026dfdf51a456b595343b6e6e8483a44e
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -229,7 +249,11 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">QuizzCardQt</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+<<<<<<< HEAD
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/profil/spindler9u/QuizzCard/ProjetCPOA/QuizzCard/QuizzCardQt/QuizzCardQt.pro</value>
+=======
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/profil/henry262u/ProjetCPOA/QuizzCard/QuizzCardQt/QuizzCardQt.pro</value>
+>>>>>>> 089758f026dfdf51a456b595343b6e6e8483a44e
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.CommandLineArguments"></value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.ProFile">QuizzCardQt.pro</value>
     <value type="bool" key="Qt4ProjectManager.Qt4RunConfiguration.UseDyldImageSuffix">false</value>
@@ -251,7 +275,11 @@
  </data>
  <data>
   <variable>ProjectExplorer.Project.Updater.EnvironmentId</variable>
+<<<<<<< HEAD
   <value type="QByteArray">{9a81b292-610c-45de-9e6c-c0723184ea75}</value>
+=======
+  <value type="QByteArray">{728352d1-4722-4317-9e51-74d58186e94c}</value>
+>>>>>>> 089758f026dfdf51a456b595343b6e6e8483a44e
  </data>
  <data>
   <variable>ProjectExplorer.Project.Updater.FileVersion</variable>
