@@ -11,6 +11,11 @@ void Client::addCarte( std::string nomPaquet, std::string front, std::string bac
         }
     }
 }
+
+std::vector<Paquet*> Client::getPaquets(){
+    return paquets;
+}
+
 std::string Client::getLogin() const{
     return loginClient;
 }

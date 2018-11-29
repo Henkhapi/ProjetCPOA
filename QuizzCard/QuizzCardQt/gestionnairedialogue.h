@@ -15,6 +15,7 @@ private:
 public:
   void authentifier(std::string login);
   void deconnecter();
+  Client *getCurrentClient();
   void addPaquet( std::string s) const;
   void addCarte( std::string nomPaquet, std::string front, std::string back) const;
 };

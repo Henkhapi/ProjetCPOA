@@ -34,7 +34,7 @@
      <string>QuizzCard : L'application de révision de cartes</string>
     </property>
    </widget>
-   <widget class="QListView" name="liste_Paquets">
+   <widget class="QListWidget" name="liste_Paquets">
     <property name="geometry">
      <rect>
       <x>30</x>

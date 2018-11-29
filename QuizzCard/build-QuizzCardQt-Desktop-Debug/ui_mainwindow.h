@@ -15,7 +15,7 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QListView>
+#include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
@@ -41,7 +41,7 @@ public:
     QAction *actionAffichage_statistiques;
     QWidget *centralWidget;
     QLabel *label;
-    QListView *liste_Paquets;
+    QListWidget *liste_Paquets;
     QLabel *label_2;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
@@ -95,7 +95,7 @@ public:
         font.setBold(true);
         font.setWeight(75);
         label->setFont(font);
-        liste_Paquets = new QListView(centralWidget);
+        liste_Paquets = new QListWidget(centralWidget);
         liste_Paquets->setObjectName(QStringLiteral("liste_Paquets"));
         liste_Paquets->setGeometry(QRect(30, 90, 281, 291));
         label_2 = new QLabel(centralWidget);

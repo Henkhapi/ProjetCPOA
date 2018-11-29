@@ -14,6 +14,7 @@ protected:
 public:
     Client(std::string login) :loginClient(login){}
     void authentifier (std::string login);
+    std::vector<Paquet*> getPaquets();
     void addPaquet( std::string paquet) ;
     void addCarte( std::string nomPaquet, std::string front, std::string back);
     std::string getLogin() const;

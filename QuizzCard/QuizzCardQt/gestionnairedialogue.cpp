@@ -14,6 +14,10 @@ void GestionnaireDialogue::deconnecter(){
     currentClient = NULL;
 }
 
+Client *GestionnaireDialogue::getCurrentClient(){
+    return currentClient;
+}
+
 void GestionnaireDialogue::addPaquet(std::string s) const{
     currentClient->addPaquet(s);
 }
