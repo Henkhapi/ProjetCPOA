@@ -13,20 +13,21 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = 0);
+    explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void update();
 
 private slots:
-    void on_pushButton_3_clicked();
+    void on_ajoutPaquet_clicked();
 
-    void on_pushButton_clicked();
+    void on_reviser_clicked();
 
-    void on_pushButton_6_clicked();
+    void on_connexion_clicked();
 
-    void on_pushButton_4_clicked();
+    void on_ajoutCarte_clicked();
 
-    void on_pushButton_2_clicked();
+    void on_supprPaquet_clicked();
+
 
 private:
     GestionnaireDialogue gestionnaire;

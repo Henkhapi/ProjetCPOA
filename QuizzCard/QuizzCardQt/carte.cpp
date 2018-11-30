@@ -32,9 +32,9 @@ Face *Carte::getFaceBack() const{
 bool Carte::isText(std::string os){
     bool res = true;
     std::string tmp = os;
-    int pos;
+    unsigned int pos;
     pos=tmp.size()-5;
-    if(pos<0){
+    if(pos<=0){
         pos=0;
     }
     tmp.substr(pos,4);

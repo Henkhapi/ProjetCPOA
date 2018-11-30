@@ -57,7 +57,7 @@
      <string>Liste de mes paquets</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="reviser">
     <property name="geometry">
      <rect>
       <x>330</x>
@@ -70,7 +70,7 @@
      <string>Réviser un paquet</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="supprPaquet">
     <property name="geometry">
      <rect>
       <x>330</x>
@@ -83,7 +83,7 @@
      <string>Supprimer un paquet</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="ajoutPaquet">
     <property name="geometry">
      <rect>
       <x>330</x>
@@ -96,7 +96,7 @@
      <string>Ajouter un paquet</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QPushButton" name="ajoutCarte">
     <property name="geometry">
      <rect>
       <x>330</x>
@@ -109,7 +109,7 @@
      <string>Ajouter une carte</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_5">
+   <widget class="QPushButton" name="supprCarte">
     <property name="geometry">
      <rect>
       <x>330</x>
@@ -122,7 +122,7 @@
      <string>Supprimer une carte</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_6">
+   <widget class="QPushButton" name="connexion">
     <property name="geometry">
      <rect>
       <x>510</x>
@@ -135,7 +135,7 @@
      <string>Connexion</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_7">
+   <widget class="QPushButton" name="import_2">
     <property name="geometry">
      <rect>
       <x>330</x>
@@ -148,7 +148,7 @@
      <string>Importer Paquet</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_8">
+   <widget class="QPushButton" name="export_2">
     <property name="geometry">
      <rect>
       <x>330</x>
@@ -168,7 +168,7 @@
      <x>0</x>
      <y>0</y>
      <width>598</width>
-     <height>25</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFichier">

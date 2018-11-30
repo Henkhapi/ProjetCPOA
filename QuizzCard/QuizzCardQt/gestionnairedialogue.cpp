@@ -2,7 +2,7 @@
 
 void GestionnaireDialogue::authentifier(std::string login){
     currentClient = verifClient(login);
-    if(currentClient == NULL){
+    if(currentClient == nullptr){
         currentClient = new Client(login);
         clients.push_back(currentClient);
     }
@@ -11,7 +11,7 @@ void GestionnaireDialogue::authentifier(std::string login){
 
 void GestionnaireDialogue::deconnecter(){
     currentLogin = "";
-    currentClient = NULL;
+    currentClient = nullptr;
 }
 
 Client *GestionnaireDialogue::getCurrentClient(){
@@ -32,6 +32,6 @@ Client *GestionnaireDialogue::verifClient(std::string login){
             return clients[i];
         }
     }
-    return NULL;
+    return nullptr;
 
 }

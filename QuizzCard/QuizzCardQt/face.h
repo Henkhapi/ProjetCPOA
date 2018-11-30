@@ -9,8 +9,8 @@
 class Face{
 public :
   virtual ~Face(){}
-  virtual void setContent(std::string txt) const=0;
-  virtual std::string getContent() const =0;
+  //virtual void setContent(std::string txt) const=0;
+  //virtual std::string getContent() const =0;
 
 };
 
