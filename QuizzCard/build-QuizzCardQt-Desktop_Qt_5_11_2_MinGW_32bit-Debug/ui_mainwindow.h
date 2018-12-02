@@ -27,15 +27,14 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindow
 {
 public:
-    QAction *actionQuitter;
     QAction *actionImporter;
     QAction *actionExporter;
     QAction *actionAjouter_un_paquet;
     QAction *actionAjouter_une_carte;
     QAction *actionSupprimession_paquet;
     QAction *actionSuppression_carte;
-    QAction *actionS_enregistrer;
-    QAction *actionQuitter_2;
+    QAction *actionConnexion;
+    QAction *actionQuitter;
     QAction *actionAffichage_statistiques;
     QWidget *centralWidget;
     QLabel *label;
@@ -49,6 +48,8 @@ public:
     QPushButton *connexion;
     QPushButton *import_2;
     QPushButton *export_2;
+    QLabel *label_3;
+    QLabel *label_4;
     QMenuBar *menuBar;
     QMenu *menuFichier;
     QMenu *menuEdition;
@@ -63,31 +64,38 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
         MainWindow->resize(598, 474);
-        actionQuitter = new QAction(MainWindow);
-        actionQuitter->setObjectName(QStringLiteral("actionQuitter"));
         actionImporter = new QAction(MainWindow);
         actionImporter->setObjectName(QStringLiteral("actionImporter"));
+        actionImporter->setCheckable(false);
         actionExporter = new QAction(MainWindow);
         actionExporter->setObjectName(QStringLiteral("actionExporter"));
+        actionExporter->setCheckable(false);
         actionAjouter_un_paquet = new QAction(MainWindow);
         actionAjouter_un_paquet->setObjectName(QStringLiteral("actionAjouter_un_paquet"));
+        actionAjouter_un_paquet->setCheckable(false);
         actionAjouter_une_carte = new QAction(MainWindow);
         actionAjouter_une_carte->setObjectName(QStringLiteral("actionAjouter_une_carte"));
+        actionAjouter_une_carte->setCheckable(false);
         actionSupprimession_paquet = new QAction(MainWindow);
         actionSupprimession_paquet->setObjectName(QStringLiteral("actionSupprimession_paquet"));
+        actionSupprimession_paquet->setCheckable(false);
         actionSuppression_carte = new QAction(MainWindow);
         actionSuppression_carte->setObjectName(QStringLiteral("actionSuppression_carte"));
-        actionS_enregistrer = new QAction(MainWindow);
-        actionS_enregistrer->setObjectName(QStringLiteral("actionS_enregistrer"));
-        actionQuitter_2 = new QAction(MainWindow);
-        actionQuitter_2->setObjectName(QStringLiteral("actionQuitter_2"));
+        actionSuppression_carte->setCheckable(false);
+        actionConnexion = new QAction(MainWindow);
+        actionConnexion->setObjectName(QStringLiteral("actionConnexion"));
+        actionConnexion->setCheckable(false);
+        actionQuitter = new QAction(MainWindow);
+        actionQuitter->setObjectName(QStringLiteral("actionQuitter"));
+        actionQuitter->setCheckable(false);
         actionAffichage_statistiques = new QAction(MainWindow);
         actionAffichage_statistiques->setObjectName(QStringLiteral("actionAffichage_statistiques"));
+        actionAffichage_statistiques->setCheckable(false);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(30, 10, 531, 51));
+        label->setGeometry(QRect(30, 20, 531, 51));
         QFont font;
         font.setPointSize(18);
         font.setBold(true);
@@ -123,6 +131,12 @@ public:
         export_2 = new QPushButton(centralWidget);
         export_2->setObjectName(QStringLiteral("export_2"));
         export_2->setGeometry(QRect(330, 350, 161, 27));
+        label_3 = new QLabel(centralWidget);
+        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setGeometry(QRect(30, 10, 61, 16));
+        label_4 = new QLabel(centralWidget);
+        label_4->setObjectName(QStringLiteral("label_4"));
+        label_4->setGeometry(QRect(90, 10, 61, 16));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -150,8 +164,8 @@ public:
         menuBar->addAction(menuAffichage->menuAction());
         menuBar->addAction(menuAjouts->menuAction());
         menuBar->addAction(menuSuppression->menuAction());
-        menuFichier->addAction(actionS_enregistrer);
-        menuFichier->addAction(actionQuitter_2);
+        menuFichier->addAction(actionConnexion);
+        menuFichier->addAction(actionQuitter);
         menuEdition->addAction(actionImporter);
         menuEdition->addAction(actionExporter);
         menuAjouts->addAction(actionAjouter_un_paquet);
@@ -168,15 +182,14 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
-        actionQuitter->setText(QApplication::translate("MainWindow", "Quitter", nullptr));
         actionImporter->setText(QApplication::translate("MainWindow", "Importer", nullptr));
         actionExporter->setText(QApplication::translate("MainWindow", "Exporter", nullptr));
         actionAjouter_un_paquet->setText(QApplication::translate("MainWindow", "Ajouter un paquet", nullptr));
         actionAjouter_une_carte->setText(QApplication::translate("MainWindow", "Ajouter une carte", nullptr));
         actionSupprimession_paquet->setText(QApplication::translate("MainWindow", "Supprimession paquet", nullptr));
         actionSuppression_carte->setText(QApplication::translate("MainWindow", "Suppression carte", nullptr));
-        actionS_enregistrer->setText(QApplication::translate("MainWindow", "Se connecter", nullptr));
-        actionQuitter_2->setText(QApplication::translate("MainWindow", "Quitter", nullptr));
+        actionConnexion->setText(QApplication::translate("MainWindow", "Se connecter", nullptr));
+        actionQuitter->setText(QApplication::translate("MainWindow", "Quitter", nullptr));
         actionAffichage_statistiques->setText(QApplication::translate("MainWindow", "Affichage statistiques", nullptr));
         label->setText(QApplication::translate("MainWindow", "QuizzCard : L'application de r\303\251vision de cartes", nullptr));
         label_2->setText(QApplication::translate("MainWindow", "Liste de mes paquets", nullptr));
@@ -188,6 +201,8 @@ public:
         connexion->setText(QApplication::translate("MainWindow", "Connexion", nullptr));
         import_2->setText(QApplication::translate("MainWindow", "Importer Paquet", nullptr));
         export_2->setText(QApplication::translate("MainWindow", "Exporter Paquet", nullptr));
+        label_3->setText(QApplication::translate("MainWindow", "Bienvenue :", nullptr));
+        label_4->setText(QString());
         menuFichier->setTitle(QApplication::translate("MainWindow", "Fichier", nullptr));
         menuEdition->setTitle(QApplication::translate("MainWindow", "Edition", nullptr));
         menuAjouts->setTitle(QApplication::translate("MainWindow", "Cr\303\251ation", nullptr));

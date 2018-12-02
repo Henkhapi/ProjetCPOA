@@ -21,6 +21,10 @@
  **/
 class Client {
 protected:
+    ///@brief paquet par defaut
+    /// 
+    /// @version 1b
+    Paquet* defaut;
     ///@brief Liste des paquets du client
     ///
     /// @version 1b

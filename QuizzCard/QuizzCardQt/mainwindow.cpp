@@ -4,12 +4,14 @@
 #include "QMessageBox"
 #include "QListWidgetItem"
 #include "QStringList"
+#include "QAction"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent), gestionnaire(),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    connect(ui->actionQuitter, SIGNAL(triggered(bool)), qApp, SLOT(quit()));
 }
 
 MainWindow::~MainWindow()
@@ -33,9 +35,10 @@ void MainWindow::on_ajoutPaquet_clicked()
 void MainWindow::update(){
     if(gestionnaire.getCurrentClient()!=nullptr){
         QStringList *list_paquet = new QStringList();
-        for(unsigned int i=0; i<gestionnaire.getCurrentClient()->getPaquets().size()-1; i++){
-            list_paquet->push_front(QString::fromStdString(gestionnaire.getCurrentClient()->getPaquets()[i]->getNom()));
+        for(unsigned int i=0; i<gestionnaire.getCurrentClient()->getPaquets().size(); i++){
+            list_paquet->push_back(QString::fromStdString(gestionnaire.getCurrentClient()->getPaquets()[i]->getNom()));
         }
+        ui->liste_Paquets->clear();
         ui->liste_Paquets->addItems(*list_paquet);
     }
 }
@@ -51,6 +54,7 @@ void MainWindow::on_connexion_clicked()
 {
     QString pseudo = QInputDialog::getText(this, "Connexion", "Pseudo :");
     gestionnaire.authentifier(pseudo.toStdString());
+    ui->label_4->setText(pseudo);
 }
 
 //ajouter une carte
