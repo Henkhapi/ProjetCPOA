@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QListWidgetItem>
 #include "gestionnairedialogue.h"
 
 ///@brief Nom de la classe qui nous allons construire
@@ -53,10 +54,10 @@ private slots:
 ///
 /// @version 1c
     void on_ajoutCarte_clicked();
-///@brief Methode de suppression de paquet lors de l'appui sur le bouton
+///@brief Methode permettant de supprimer un paquet à l'aide d'un double clic
 ///
-/// @version 1c
-    void on_supprPaquet_clicked();
+/// @version 2a
+    void on_liste_Paquets_itemDoubleClicked(QListWidgetItem *item);
 
 private:
     ///@brief gestionnaire de dialogue qui nous sera utile
@@ -65,6 +66,8 @@ private:
     GestionnaireDialogue gestionnaire;
 
     Ui::MainWindow *ui;
+
+
 };
 
 #endif // MAINWINDOW_H

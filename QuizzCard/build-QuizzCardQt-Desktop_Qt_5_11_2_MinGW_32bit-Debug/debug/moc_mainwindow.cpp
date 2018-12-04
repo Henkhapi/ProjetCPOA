@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[7];
-    char stringdata0[120];
+    QByteArrayData data[9];
+    char stringdata0[154];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -37,12 +37,16 @@ QT_MOC_LITERAL(2, 34, 0), // ""
 QT_MOC_LITERAL(3, 35, 18), // "on_reviser_clicked"
 QT_MOC_LITERAL(4, 54, 20), // "on_connexion_clicked"
 QT_MOC_LITERAL(5, 75, 21), // "on_ajoutCarte_clicked"
-QT_MOC_LITERAL(6, 97, 22) // "on_supprPaquet_clicked"
+QT_MOC_LITERAL(6, 97, 34), // "on_liste_Paquets_itemDoubleCl..."
+QT_MOC_LITERAL(7, 132, 16), // "QListWidgetItem*"
+QT_MOC_LITERAL(8, 149, 4) // "item"
 
     },
     "MainWindow\0on_ajoutPaquet_clicked\0\0"
     "on_reviser_clicked\0on_connexion_clicked\0"
-    "on_ajoutCarte_clicked\0on_supprPaquet_clicked"
+    "on_ajoutCarte_clicked\0"
+    "on_liste_Paquets_itemDoubleClicked\0"
+    "QListWidgetItem*\0item"
 };
 #undef QT_MOC_LITERAL
 
@@ -64,14 +68,14 @@ static const uint qt_meta_data_MainWindow[] = {
        3,    0,   40,    2, 0x08 /* Private */,
        4,    0,   41,    2, 0x08 /* Private */,
        5,    0,   42,    2, 0x08 /* Private */,
-       6,    0,   43,    2, 0x08 /* Private */,
+       6,    1,   43,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 7,    8,
 
        0        // eod
 };
@@ -86,11 +90,10 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 1: _t->on_reviser_clicked(); break;
         case 2: _t->on_connexion_clicked(); break;
         case 3: _t->on_ajoutCarte_clicked(); break;
-        case 4: _t->on_supprPaquet_clicked(); break;
+        case 4: _t->on_liste_Paquets_itemDoubleClicked((*reinterpret_cast< QListWidgetItem*(*)>(_a[1]))); break;
         default: ;
         }
     }
-    Q_UNUSED(_a);
 }
 
 QT_INIT_METAOBJECT const QMetaObject MainWindow::staticMetaObject = {

@@ -70,19 +70,6 @@
      <string>Réviser un paquet</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="supprPaquet">
-    <property name="geometry">
-     <rect>
-      <x>330</x>
-      <y>240</y>
-      <width>161</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Supprimer un paquet</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="ajoutPaquet">
     <property name="geometry">
      <rect>

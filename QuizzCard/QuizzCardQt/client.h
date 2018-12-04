@@ -21,6 +21,10 @@
  **/
 class Client {
 protected:
+    ///@brief paquet par defaut
+    ///
+    /// @version 1b
+    Paquet* defaut;
     ///@brief Liste des paquets du client
     ///
     /// @version 1b
@@ -35,7 +39,7 @@ public:
     /// @see loginClient : le login du client
     ///
     /// @version 1a
-    Client(std::string login) :loginClient(login){}
+    Client(std::string login) :loginClient(login){defaut=new Paquet("default");paquets.push_back(defaut);}
     ///@brief méthode d'authentification du client
     ///
     /// @version 1a

@@ -41,7 +41,6 @@ public:
     QListWidget *liste_Paquets;
     QLabel *label_2;
     QPushButton *reviser;
-    QPushButton *supprPaquet;
     QPushButton *ajoutPaquet;
     QPushButton *ajoutCarte;
     QPushButton *supprCarte;
@@ -110,9 +109,6 @@ public:
         reviser = new QPushButton(centralWidget);
         reviser->setObjectName(QStringLiteral("reviser"));
         reviser->setGeometry(QRect(330, 90, 141, 27));
-        supprPaquet = new QPushButton(centralWidget);
-        supprPaquet->setObjectName(QStringLiteral("supprPaquet"));
-        supprPaquet->setGeometry(QRect(330, 240, 161, 27));
         ajoutPaquet = new QPushButton(centralWidget);
         ajoutPaquet->setObjectName(QStringLiteral("ajoutPaquet"));
         ajoutPaquet->setGeometry(QRect(330, 150, 161, 27));
@@ -194,7 +190,6 @@ public:
         label->setText(QApplication::translate("MainWindow", "QuizzCard : L'application de r\303\251vision de cartes", nullptr));
         label_2->setText(QApplication::translate("MainWindow", "Liste de mes paquets", nullptr));
         reviser->setText(QApplication::translate("MainWindow", "R\303\251viser un paquet", nullptr));
-        supprPaquet->setText(QApplication::translate("MainWindow", "Supprimer un paquet", nullptr));
         ajoutPaquet->setText(QApplication::translate("MainWindow", "Ajouter un paquet", nullptr));
         ajoutCarte->setText(QApplication::translate("MainWindow", "Ajouter une carte", nullptr));
         supprCarte->setText(QApplication::translate("MainWindow", "Supprimer une carte", nullptr));
